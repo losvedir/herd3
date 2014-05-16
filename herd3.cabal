@@ -16,3 +16,4 @@ executable herd3
   build-depends: base       ==4.6.*
                , blaze-html
                , scotty
+               , wai-middleware-static
