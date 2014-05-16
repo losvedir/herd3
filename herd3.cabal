@@ -1,0 +1,17 @@
+name:                herd3
+version:             0.0.1
+synopsis:            Haskell ElasticSearch React.js D3 viz
+description:         See pretty dashboard of our data
+homepage:            https://www.coachup.com
+license:             MIT
+author:              Gabe Durazo
+maintainer:          gabe@gabedurazo.com
+category:            Web
+copyright:           2014 Gabe Durazo
+build-type:          Simple
+cabal-version:       >=1.8
+
+executable herd3
+  main-is: Main.hs
+  build-depends: base       ==4.6.*
+               , scotty
