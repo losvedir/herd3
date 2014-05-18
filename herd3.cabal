@@ -14,6 +14,7 @@ cabal-version:       >=1.8
 executable herd3
   main-is: Main.hs
   build-depends: base       ==4.6.*
+               , aeson
                , blaze-html
                , scotty
                , wai-middleware-static
