@@ -1,0 +1,12 @@
+@import "normalize";
+@import "bourbon/bourbon";
+@import "bitters/bitters";
+@import "neat/neat";
+
+body {
+  background-color: #fdf6e3;
+}
+
+.container {
+  @include outer-container;
+}

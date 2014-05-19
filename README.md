@@ -16,7 +16,10 @@ scotty webserver.
     $ cabal build
     $ dist/build/herd3/herd3
 
+Styles are written in sass in herd3/assets/styles/*. Compile (and optionally --watch)
+them with sass into /static/css/*, which is statically served by the middleware:
 
+    herd3 $ sass --watch herd3/assets/styles:herd3/static/css/
 
 
 
