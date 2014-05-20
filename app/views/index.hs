@@ -14,6 +14,18 @@ render = do
       H.title "Welcome to the Future. HERD3 Analytics Dashboard."
       link ! rel "stylesheet" ! href "css/herd3.css"
     body $ do
+      header ! class_ "navigation" $ do
+        H.div ! class_ "menu-wrapper" $ do
+          a ! class_ "logo" $ do
+            img ! src "https://raw.github.com/Magnus-G/Random/master/placeholder_logo_1.png"
+          H.div ! class_ "nav" $ do
+            ul ! HA.id "navigation-menu" $ do
+              li ! class_ "nav-link" $ do
+                a "Packages"
+              li ! class_ "nav-link" $ do
+                a "Coaches"
+              li ! class_ "nav-link" $ do
+                a "Messages"
       H.div ! class_ "container" $ do
         h1 "Analytics Dashboard"
         H.div $ do
