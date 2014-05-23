@@ -26,18 +26,7 @@ render = do
                 a "Coaches"
               li ! class_ "nav-link" $ do
                 a "Messages"
-      H.div ! class_ "container" $ do
-        h1 "Analytics Dashboard"
-        H.div $ do
-          p "Possible graphs:"
-          ul $ do
-            li "date histogram of how many coaches have been approved over time"
-            li "pie chart of coaches by sport"
-            li "count of messages over time"
-            li "sum of package revenue over time"
-        p "Also: Control panel to filter and select stuff."
-
-        H.div ! HA.id "toy" $ ""
+      H.div ! HA.id "main" ! class_ "container" $ do ""
 
       script ! src "http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore.js" $ ""
       script ! src "http://cdnjs.cloudflare.com/ajax/libs/react/0.10.0/react.js" $ ""

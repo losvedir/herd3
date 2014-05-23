@@ -4,11 +4,19 @@
 @import "neat/neat";
 
 body {
-  background-color: #fdf6e3;
+  background-color: white;
 }
 
 .container {
   @include outer-container;
+}
+
+.form {
+  @include span-columns(4);
+}
+
+.barchart {
+  @include span-columns(8);
 }
 
 header.navigation {
